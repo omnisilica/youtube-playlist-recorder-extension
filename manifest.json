@@ -1,0 +1,29 @@
+
+{
+    "name": "YouTube Playlist Recorder",
+    "version": "0.1.0",
+    "description": "Records the order of videos that are played within any playlist currently playing",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.youtube.com/*"],
+    "background": {
+        "service_worker": "backgroundServices.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["contentManager.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [],
+            "matches": ["https://*.youtube.com/*"]
+        }
+    ],
+    "action": {
+        "default_icon": {},
+        "default_title": "YouTube Playlist Recorder",
+        "default_popup": "view.html"
+    },
+    "manifest_version": 3
+}
