@@ -1,0 +1,44 @@
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #343434;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+.root_ {
+    min-width: 300px;
+}
+
+.not-yt-page {
+    margin: auto;
+    text-align: center;
+}
+
+.not-yt-page p {
+    min-width: 80%;
+}
+
+.not-yt-page a {
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+.not-yt-page a:hover {
+    color: blue;
+}
+
+.no-active-playlist-container {
+    margin: auto;
+    text-align: center;
+}
