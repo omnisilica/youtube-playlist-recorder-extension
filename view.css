@@ -9,6 +9,7 @@ html {
   
   body {
     color: #343434;
+    background-color: rgba(1, 6, 8, 1);
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -17,6 +18,7 @@ html {
 
 .root_ {
     min-width: 300px;
+    margin: auto;
 }
 
 .not-yt-page {
@@ -26,19 +28,92 @@ html {
 
 .not-yt-page p {
     min-width: 80%;
+    color: rgba(241, 241, 241, 1);;
 }
 
 .not-yt-page a {
     font-size: 12px;
     text-decoration: none;
+    color: rgba(33, 135, 184, 1);
 
 }
 
 .not-yt-page a:hover {
-    color: blue;
+    color: rgba(137, 207, 240, 1);
 }
 
 .no-active-playlist-container {
     margin: auto;
     text-align: center;
+    color: rgba(241, 241, 241, 1);;
+}
+
+.playlist-details {
+    min-width: 90%;
+    text-align: center;
+    border: 1px solid rgba(	45,45,45,1);
+    border-radius: 10px;
+    background-color: rgba(38, 38, 38, 1);
+}
+
+.playlist-details img {
+    float: left;
+    width: 40%;
+    border-radius: 8px 0px 0px 0px;
+}
+
+.playlist-title {
+    float: right;
+    overflow-wrap: break-word;
+    width: 60%;
+    text-align: left;
+}
+
+.playlist-title p {
+    margin-left: 10px;
+    margin-top: 20%;
+    font-size: 90%;
+    font-weight: bold;
+    color: rgba(241, 241, 241, 1);
+}
+
+.record-playlist {
+    clear: both;
+    border: 0.5px solid rgba(	38,38,38,1);
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgba(15,15,15, 1);
+    /* color: rgba(241, 241, 241, 1); */
+    color: rgba(33, 135, 184, 1);
+}
+
+.record-playlist:hover {
+    background-color: rgba(115, 194, 251, 1);
+    color: rgba(248, 248, 255, 1);
+    transition-delay: 0.1s;
+}
+
+.record-playlist button {
+    display: inline-block;
+    background-color: rgba(15,15,15, 1);
+    border: 0px;
+    padding: 12px;
+    width: 50%;
+}
+
+.record-playlist button:first-child {
+    color: rgba(33, 135, 184, 1);
+}
+
+.record-playlist button:last-child {
+    color: rgba(255, 15, 15, 1);
+}
+
+.record-playlist button:first-child:hover {
+    background-color: rgba(115, 194, 251, 1);
+    color: rgba(248, 248, 255, 1);
+}
+
+.record-playlist button:last-child:hover {
+    background-color: rgba(255, 15, 15, 1);
+    color: rgba(248, 248, 255, 1);
 }
