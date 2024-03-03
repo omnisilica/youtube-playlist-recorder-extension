@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     //console.log("DOM has loaded");
     const root_ = document.querySelector(".root_");
-    const api_key = "AIzaSyA_r7zJsZa4Wv5DAjd552eOPTfU8heneAI";
+    const api_key = "insert_api_key";
     
     const currentTab = await getActiveTabURL();
     //const currentVideo = urlParameters.get("v");
