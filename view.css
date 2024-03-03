@@ -81,18 +81,31 @@ html {
     clear: both;
     border: 0.5px solid rgba(	38,38,38,1);
     border-radius: 0px 0px 8px 8px;
-    background-color: rgba(15,15,15, 1);
+    /*background-color: rgba(15,15,15, 1);*/
     /* color: rgba(241, 241, 241, 1); */
-    color: rgba(33, 135, 184, 1);
+    /*color: rgba(33, 135, 184, 1);*/
 }
 
-.record-playlist:hover {
+.record-button {
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    border-width: 0px;
+    background-color: rgba(15,15,15, 1);
+    color: rgba(55, 175, 212, 1);
+}
+
+.record-button:hover {
     background-color: rgba(115, 194, 251, 1);
     color: rgba(248, 248, 255, 1);
-    transition-delay: 0.1s;
+    /*transition-delay: 0.1s;*/
 }
 
-.record-playlist button {
+.record-playlist p:hover {
+    cursor: pointer;
+}
+
+
+.view-all-button, .stop-recording-button {
     display: inline-block;
     background-color: rgba(15,15,15, 1);
     border: 0px;
@@ -100,20 +113,47 @@ html {
     width: 50%;
 }
 
-.record-playlist button:first-child {
+.view-all-button {
     color: rgba(33, 135, 184, 1);
 }
 
-.record-playlist button:last-child {
+.stop-recording-button {
     color: rgba(255, 15, 15, 1);
 }
 
-.record-playlist button:first-child:hover {
+.view-all-button:hover {
     background-color: rgba(115, 194, 251, 1);
     color: rgba(248, 248, 255, 1);
 }
 
-.record-playlist button:last-child:hover {
+.stop-recording-button:hover {
     background-color: rgba(255, 15, 15, 1);
+    color: rgba(248, 248, 255, 1);
+}
+
+.video-item-container {
+    text-align: center;
+    clear: both;
+}
+
+.current-video-item-img {
+    width: 50px;
+    float: left;
+}
+
+.current-video-title {
+    /*float: left;*/
+    text-align: left;
+    color: rgba(248, 248, 255, 1);
+    /*margin: 10px 0px 15px 5px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.download-link {
+    text-align: center;
+    background-color: rgba(50, 205, 50, 1);
+    text-decoration: none;
     color: rgba(248, 248, 255, 1);
 }
